@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel = "stylesheet" href="stylesheets/style.css"> 
 </head>
 <body>
     <header>
@@ -74,11 +74,6 @@
                 <p>Trabajar con Gabriel fue una experiencia enriquecedora. No solo cumplió con todos los objetivos técnicos, sino que aportó ideas valiosas que elevaron la calidad final de nuestro producto. Altamente recomendado.</p>
             </section>
         </article>
-        
-        <section id="mapa">
-            <h2>Ubicación</h2>
-            <div id="map" style="height: 400px; width: 100%; margin-top: 10px;"></div>
-        </section>
     </main>
     
     <footer>
@@ -89,19 +84,5 @@
         </ul>
     </footer>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        // Inicializar el mapa
-        var map = L.map('map').setView([-0.1807, -78.4678], 13);
-
-        // Añadir capa de mapa base
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Añadir marcador
-        var marker = L.marker([-0.1807, -78.4678]).addTo(map);
-        marker.bindPopup("<b>Mi ubicación</b>").openPopup();
-    </script>
 </body>
 </html>
