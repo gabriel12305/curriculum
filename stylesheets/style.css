@@ -1,48 +1,67 @@
-/* Estilos para las etiquetas section */
-section {
-    border: 0.2pt solid #cedddd;
-    margin: 4px 2px 8px 2px;
-    padding: 1.5% 0.8%;
-    margin-bottom: calc(1.2 * 1rem);
-}
-
-/* Estilos básicos para el resto de la página */
 * {
-    font-family: 'Arial', sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+header h1{
+    text-align: center;
+    color: #054687;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #60a0df;
 }
 
-header h1 {
+h2 {
+    padding-left: 10px;
+    border-left: 4px solid #054687;
+}
+
+header p{
+    text-align: center;
+}
+
+nav ul {
     text-align: center;
     color: #2c3e50;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-nav li {
+nav li{
     display: inline-block;
     margin: 0 10px;
 }
 
-nav a {
+nav a{
     text-decoration: none;
-    color: #3498db;
+    color: #2a9ae5;
 }
 
-footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 15px;
-    background-color: #f8f9fa;
+section {
+    margin: 4px 2px 8px 2px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin: 10px 0;
+}
+
+form input{
+    width: 200px;
+}
+
+form select{
+    width: 300px;
+}
+
+form button{
+    margin: 15px 30px;
+    width: 70px;
+}
+
+.contenedor-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

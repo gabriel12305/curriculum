@@ -20,7 +20,8 @@
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#testimonios">Testimonios</a></li>
-            <li><a href="#mapa">Ubicación</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#formulario">Formulario</a></li>
         </ul>
     </nav>
     
@@ -74,7 +75,34 @@
                 <p>Trabajar con Gabriel fue una experiencia enriquecedora. No solo cumplió con todos los objetivos técnicos, sino que aportó ideas valiosas que elevaron la calidad final de nuestro producto. Altamente recomendado.</p>
             </section>
         </article>
+        <section id="video">
+            <h2>Video</h2>
+            <div class="contenedor-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dFhXYlMeTSA?si=MjJc4i4gGKEwedYL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+        </section>
+        <section id = "formulario">
+            <h2>Formulario</h2>
+            <form action="/solicitud" method="POST" enctype="multipart/form-data">
+                <label for = "nombre">Nombre:</label>
+                <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+                <label for = "opciones"> Elige tu rango de edad:</label>
+                <select id="opciones" name="opciones">
+                    <option value="">-- Seleciona --</option>
+                    <option value="opcion1"> &lt; 18 </option>
+                    <option value="opcion2"> 18-30 </option>
+                    <option value="opcion3"> 30-50 </option>
+                    <option value="opcion1"> &gt; 50 </option>
+                </select>
+                <label for="archivo">Subir archivo</label>
+                <input type="file" id="archivo" name="archivo">
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
     </main>
+
     
     <footer>
         <p>© Gabriel - 2025</p>
