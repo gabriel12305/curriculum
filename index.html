@@ -84,22 +84,25 @@
         </section>
         <section id = "formulario">
             <h2>Formulario</h2>
-            <form action="/solicitud" method="POST" enctype="multipart/form-data">
-                <label for = "nombre">Nombre:</label>
-                <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
-                <label for = "opciones"> Elige tu rango de edad:</label>
-                <select id="opciones" name="opciones">
-                    <option value="">-- Seleciona --</option>
-                    <option value="opcion1"> &lt; 18 </option>
-                    <option value="opcion2"> 18-30 </option>
-                    <option value="opcion3"> 30-50 </option>
-                    <option value="opcion1"> &gt; 50 </option>
-                </select>
-                <label for="archivo">Subir archivo</label>
-                <input type="file" id="archivo" name="archivo">
-                <button type="submit">Enviar</button>
+            <div class="contenedor_formulario">
+                <form action="/solicitud" method="POST" enctype="multipart/form-data">
+                    <label for = "nombre">Nombre:</label>
+                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+                    <label for = "opciones"> Elige tu rango de edad:</label>
+                    <select id="opciones" name="opciones">
+                        <option value="">-- Seleciona --</option>
+                        <option value="opcion1"> &lt; 18 </option>
+                        <option value="opcion2"> 18-30 </option>
+                        <option value="opcion3"> 30-50 </option>
+                        <option value="opcion1"> &gt; 50 </option>
+                    </select>
+                    <label for="archivo">Subir archivo</label>
+                    <input type="file" id="archivo" name="archivo">
+                    <button type="submit">Enviar</button>
 
-            </form>
+                </form>
+            </div>
+            
         </section>
     </main>
 
