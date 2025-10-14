@@ -2,12 +2,20 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header h1{
+header{
     text-align: center;
-    color: #054687;
-    border-radius: 5px;
-    margin: 10px 0;
-    background-color: #60a0df;
+    border: 2px solid #054687;
+    border-radius: 12px;
+    background-color: #054687;
+}
+
+header nav{
+    display: inline-block;
+}
+
+header h1{
+    color: #e0e0e0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -17,11 +25,15 @@ h2 {
 
 header p{
     text-align: center;
+    color: #e0e0e0;
 }
 
 nav ul {
     text-align: center;
-    color: #2c3e50;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 10px 0;
 }
 
 nav li{
@@ -31,7 +43,35 @@ nav li{
 
 nav a{
     text-decoration: none;
-    color: #2a9ae5;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#sobreMi{
+    display: flex;
+    gap: 1rem;
+    margin: 15px 0;
+}
+
+.contenedor_foto_perfil{
+    display:flex ;
+    align-items: center; 
+    justify-content: center;
+}
+
+#sobreMi img{
+    width: 60%;
+    flex: 0 0 30%;
+}
+
+.contenedor_sobreMi{
+    flex: 0 0 70%;
+}
+
+.contenedor_foto_espol{
+    padding: 5px 23%;
 }
 
 section {
@@ -90,3 +130,5 @@ footer li{
     display: inline-block;
     margin: 0 10px;
 }
+
+
