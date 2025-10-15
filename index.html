@@ -19,16 +19,16 @@
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#video">Video</a></li>
-                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <section id="sobreMi">
-            <div class="contenedor_foto_perfil">
+            <figure class="contenedor_foto_perfil">
                 <img src="/resources/foto_perfil.jpg">
-            </div>
+            </figure>
             <div class="contenedor_sobreMi">
                 <h2>Sobre Mi</h2>
                 <p>Soy estudiante y desarrollador apasionado por la programación, los sistemas y la tecnología. Me gusta aprender explorando distintos lenguajes y paradigmas, desde bajo nivel con MIPS y C, hasta estructuras de datos y proyectos más completos en Java.</p>
@@ -46,13 +46,39 @@
                     <li><strong>Colegio: </strong>Unidad Educativa Mariscal Sucre</li>
                 </ul>
             </div>
-            <div class="contenedor_foto_espol">
+            <figure class="contenedor_foto_espol">
                 <img src="/resources/monumento espol.jpg" >
-            </div>
+            </figure>
         </section>
 
         <section id="experiencia">
             <h2>Experiencia</h2>
+            <li class="titulo_experiencia"><strong>Ayudante de Investigación</strong></li>
+            <article class="contenedor_ayudante">
+                <p class="difuminado">oct. 2025 - actualidad</p>
+                <p>Mis funciones incluyen:</p>
+                <ul>
+                    <li>Apoyo en el desarrollo y ejecución de proyectos de investigación en el área de inteligencia artificial y ciencia de datos.</li>
+                    <li>Recolección, limpieza y análisis de datos mediante herramientas estadísticas y de programación.</li>
+                    <li>Revisión bibliográfica y elaboración de resúmenes sobre literatura científica relevante.</li>
+                    <li>Documentación de resultados, redacción de reportes técnicos y preparación de material para presentaciones académicas.</li>
+                    <li>Colaboración en el diseño de experimentos y pruebas para validar hipótesis del estudio.</li>
+                </ul>
+                <p class="experiencia_aptitudes">Aptitudes: Analisis de datos, Python, Inteligencia artificial, Investigación Aplicada y Redacción académica</p>
+            </article>
+            <li class="titulo_experiencia"><strong>Ayudante de Cátedra</strong></li>
+            <article class="contenedor_ayudante">
+                <p class="difuminado">may. 2025 - sept. 2025 • 5 meses</p>
+                <p>Mis funciones incluyen:</p>
+                <ul>
+                    <li>Sesiones prácticas y resolución de ejercicios en Java sobre temas fundamentales como listas enlazadas, pilas, colas, árboles, grafos, conjuntos, mapas y algoritmos de recorrido.</li>
+                    <li>Asesorías semanales a estudiantes sobre el contenido de la materia.</li>
+                    <li>Revisión de tareas, proyectos y apoyo en evaluaciones.</li>
+                    <li>Elaboración de material practico enfocado en la aplicación de conceptos clave del curso</li>
+                </ul>
+                <p class="experiencia_aptitudes">Aptitudes: Java, Estructura de datos, Gestión del tiempo, Enseñanza Academica y Comunicación técnica</p>
+            </article>
+            
         </section>
         
         <section id="habilidades">
@@ -98,8 +124,8 @@
             </div>
             
         </section>
-        <section id = "formulario">
-            <h2>Formulario</h2>
+        <section id = "contacto">
+            <h2>Contacto</h2>
             <div class="contenedor_formulario">
                 <form action="/solicitud" method="POST" enctype="multipart/form-data">
                     <label for = "nombre">Nombre:</label>
