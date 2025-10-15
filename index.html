@@ -83,10 +83,24 @@
         
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <ul>
+                <li><strong>Lenguajes de programación: </strong>C, Java, Assembly (MIPS), Python (para análisis de datos/ML).</li>
+                <li><strong>Estructuras de datos: </strong>listas enlazadas, pilas, colas, árboles, grafos, conjuntos, mapas y algoritmos de recorrido.</li>
+                <li><strong>Programación de bajo nivel: </strong>uso de registros, subrutinas, manejo de memoria en MIPS.</li>
+                <li><strong>Machine Learning: </strong>preprocesamiento de datos, técnicas de balanceo, selección de métricas, entrenamiento y validación de modelos.</li>
+                <li><strong>Ciencia de datos: </strong>manipulación de datasets con Pandas, análisis exploratorio, visualización de datos, imputación de valores nulos.</li>
+                <li><strong>Comunicación y docencia: </strong>preparación de charlas, exposiciones y ejercicios prácticos para estudiantes.</li>
+            </ul>
         </section>
         
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <ul>
+                <li><a href="https://github.com/gabriel12305/unoProyecto">JuegoUno</a> - Juego de Uno aplicando conceptos de POO</li>
+                <li><a href="https://github.com/gabriel12305/Proyecto_Organizacion_Computadores">NumGuess</a> - Juego de adivinanzas numéricas implementado en lenguaje ensamblador MIPS</li>
+                <li><a href="https://github.com/leno-mpm/Gira-de-Concierto">Gira de conciertos</a> - Solución al Problema del Agente Viajero para planificar la ruta más corta en una gira musical.</li>
+                <li><a href="https://github.com/leno-mpm/Automotriz-Cordova">Automotriz Cordova</a> - Sistema de gestión de inventario para empresa automotriz con CRUD, SQL, procedimientos y triggers.</li>
+            </ul>
         </section>
         
         <!-- Sección de Testimonios -->
@@ -126,23 +140,35 @@
         </section>
         <section id = "contacto">
             <h2>Contacto</h2>
-            <div class="contenedor_formulario">
-                <form action="/solicitud" method="POST" enctype="multipart/form-data">
-                    <label for = "nombre">Nombre:</label>
-                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
-                    <label for = "opciones"> Elige tu rango de edad:</label>
-                    <select id="opciones" name="opciones">
-                        <option value="">-- Seleciona --</option>
-                        <option value="opcion1"> &lt; 18 </option>
-                        <option value="opcion2"> 18-30 </option>
-                        <option value="opcion3"> 30-50 </option>
-                        <option value="opcion1"> &gt; 50 </option>
-                    </select>
-                    <label for="archivo">Subir archivo</label>
-                    <input type="file" id="archivo" name="archivo">
-                    <button type="submit">Enviar</button>
+            <div class="contenedor_contacto">
+                <div class="contenedor_formulario">
+                    <form action="/solicitud" method="POST" enctype="multipart/form-data">
+                        <label for = "nombre">Nombre:</label>
+                        <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+                        <label for = "opciones"> Elige tu rango de edad:</label>
+                        <select id="opciones" name="opciones">
+                            <option value="">-- Seleciona --</option>
+                            <option value="opcion1"> &lt; 18 </option>
+                            <option value="opcion2"> 18-30 </option>
+                            <option value="opcion3"> 30-50 </option>
+                            <option value="opcion1"> &gt; 50 </option>
+                        </select>
+                        <label for="archivo">Subir archivo</label>
+                        <input type="file" id="archivo" name="archivo">
+                        <button type="submit">Enviar</button>
 
-                </form>
+                    </form>
+                </div>
+                <div class="contenedor_mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.6912781471084!2d-79.967147!3d-2.144782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d0700000001%3A0x123456789abcdef!2sESPOL!5e0!3m2!1ses!2sec!4v1700000000000"
+                        width="500"
+                        height="380"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
             </div>
             
         </section>

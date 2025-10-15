@@ -109,11 +109,27 @@ form button{
     justify-content: center;
 }
 
+.contenedor_contacto{
+    display: flex;
+    gap: 20px;
+}
+
 .contenedor_formulario{
     text-align: center;
-    border: 2px solid #054687;
-    border-radius: 10px;
-    margin: 0 30%;
+    flex: 0 0 50% 
+}
+
+#contacto form{
+     border: 2px solid #054687;
+     border-radius: 10px;
+     width: 70%;
+     margin-left: 110px;
+     margin-top: 30px;
+     height: 70%;
+}
+
+.contenedor_mapa{
+    flex: 0 0 50%;
 }
 
 footer{
@@ -142,4 +158,12 @@ footer li{
     border-left: 3px solid #cadbeb;
 }
 
+#proyectos a {
+  color: #0ea5e9; /* Azul celeste elegante */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+#proyectos a:hover {
+  color: #06b6d4; /* Turquesa al pasar el mouse */
+}
