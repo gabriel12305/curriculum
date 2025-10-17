@@ -27,7 +27,7 @@
     <main>
         <section id="sobreMi">
             <figure class="contenedor_foto_perfil">
-                <img src="/resources/foto_perfil.jpg">
+                <img src="/resources/foto_perfil.jpg" alt="Foto de perfil de Gabriel Pelaez">
             </figure>
             <div class="contenedor_sobreMi">
                 <h2>Sobre Mi</h2>
@@ -47,7 +47,7 @@
                 </ul>
             </div>
             <figure class="contenedor_foto_espol">
-                <img src="/resources/monumento espol.jpg" >
+                <img src="/resources/monumento espol.jpg" alt="Monumento de ESPOL">>
             </figure>
         </section>
 
@@ -147,7 +147,7 @@
                         <label for = "nombre">Nombre:</label>
                         <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
                         <label for = "opciones"> Elige tu rango de edad:</label>
-                        <select id="opciones" name="opciones">
+                        <select id="opciones" name="opciones" required>
                             <option value="">-- Seleciona --</option>
                             <option value="opcion1"> &lt; 18 </option>
                             <option value="opcion2"> 18-30 </option>
@@ -155,7 +155,7 @@
                             <option value="opcion1"> &gt; 50 </option>
                         </select>
                         <label for="archivo">Subir archivo</label>
-                        <input type="file" id="archivo" name="archivo">
+                        <input type="file" id="archivo" name="archivo" required>
                         <button type="submit">Enviar</button>
 
                     </form>
