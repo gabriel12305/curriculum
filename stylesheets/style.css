@@ -63,7 +63,7 @@ nav a{
 
 #sobreMi img{
     width: 60%;
-    flex: 0 0 30%;
+    flex: 0 0 70%;
 }
 
 .contenedor_sobreMi{
@@ -71,7 +71,7 @@ nav a{
 }
 
 .contenedor_foto_espol{
-    padding: 5px 23%;
+    padding: 5px 19%;
 }
 
 section {
@@ -159,9 +159,40 @@ footer li{
 }
 
 #proyectos a {
-  color: #0ea5e9; /* Azul celeste elegante */
+  color: #0ea5e9;
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+.contenedor_testimonios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.testimonio1{
+    border: 2px solid #054687;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0 15px;
+}
+
+.testimonio2{
+    border: 2px solid #054687;
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0 15px;
+}
+
+.testimonio3{
+    border: 2px solid #054687;
+    border-radius: 10px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 0 15px;
 }
 
 #proyectos a:hover {
